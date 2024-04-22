@@ -1,5 +1,6 @@
 /*
-Implement LR parser 
+Implement LR(0) parser. Action(terminal) and goto(nonterminal). r3 means third production is reduced. QWrite S^1->S intilaly and use dots and write all productions if it's before a non-terminal
+Shift-reduce and reduce-reduce conflicts
 */
 
 /*

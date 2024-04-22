@@ -1,5 +1,5 @@
-# Implement LL(1) parser and parsing table
-
+# Implement LL(1) parser and parsing table. (Parsing expression is extra ig) Non-recursive. LL(1) parsing is constructed from the grammar which is free from left recursion, common prefix, and ambiguity.
+# Follow shouldn't have epsilon and if epsilon go to the next following and find its first. If looped back, use follow instead of first. 
 from collections import OrderedDict
 
 def isterminal(char):
@@ -201,7 +201,7 @@ grammar = OrderedDict()
 grammar_first = OrderedDict()
 grammar_follow = OrderedDict()
 
-f = open('grammar.txt')
+f = open('./LAB8/grammar.txt')
 for i in f:
     i = i.replace("\n", "")
     lhs = ""

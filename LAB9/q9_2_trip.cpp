@@ -1,4 +1,6 @@
-
+/*
+Start from (14) minus c             (0)  (14)
+*/
 #include <iostream>
 using namespace std;
 
